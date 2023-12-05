@@ -29,15 +29,15 @@ $roslaunch realsense2_camera rs_camera.launch
 要先打开机械臂的控制文件
 启动地盘程序：
 ```
-$roslaunch aiibot_bringup base_control.launch
+$roslaunch moveit.launch
 ```
-启动追踪程序
+## 4.启动追踪程序
 ```
 $rosrun track_pkg kcf_node
 ```
-## 6.使用程序
+## 5.使用程序
 
-程序启动后，在图像窗口内鼠标左键框选所要跟踪的目标.
+程序启动后，在图像窗口内鼠标左键框选所要跟踪的目标.在终端会输出目标中心点的x，y，z信息
 
 # 速度规划
 
