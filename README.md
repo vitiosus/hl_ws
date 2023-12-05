@@ -19,25 +19,14 @@ Ubuntu 20.04 + ros noetic
 ```
 $roscore
 ```
-## 2.运行ros打开深度相机的节点，发出可播放深度图像和rgb图像的topic：
+## 2.运行相机的launch文件：
 ```
-$roslaunch openni_launch openni.launch
+$roslaunch realsense2_camera rs_camera.launch
 ```
-## 3.查看ros的topic列表中是否有深度图像和rgb图像的topic：
-```
-$rostopic list
-```
-## 4.编译：
-```
-$catkin_make
-$source devel/setup.bash
-```
-## 5.运行：
 
-运行前需要打开移动平台，运行移动平台启动程序 aiibot_bringup
+## 3.运行底盘launch文件：
 
-程序链接：http://git.aiiage.com:9000/liu.f/aiibot_bringup
-
+要先打开机械臂的控制文件
 启动地盘程序：
 ```
 $roslaunch aiibot_bringup base_control.launch
